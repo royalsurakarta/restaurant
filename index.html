@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Srikandi Menu - The Royal Surakarta Heritage Solo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("img/bg.jpg");
+}
+
+h1 {
+  color: #000;
+}
+
+h3 {
+  text-align: center;
+}
+
+h3::before {
+  content: url(img/before-icon.png);
+  /* color: grey; */
+}
+
+h3::after {
+  content: url(img/after-icon.png);
+  /* color: grey; */
+}
+
+b {
+  color: #000000;
+  font-weight: 600;
+}
+
+i {
+  color: #444;
+  font-weight: 100;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #d3d5d6;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  background: rgba(38, 48, 54, 0.8);
+
+}
+
+.active, .accordion:hover {
+  /* background-color: #ccc; */
+  color: #fff;
+  font-weight: bold;
+  background: rgba(187, 139, 89, 0.8);
+
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  /* background: rgba(187, 139, 89, 0.8); */
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background: rgba(76, 175, 80, 0.1);
+}
+
+div {
+  /* background: rgb(76, 175, 80); */
+  /* background: rgba(76, 175, 80, 0.3);*/
+  /* padding: 10px; */
+}
+
+div.first {
+  background: rgba(76, 175, 80, 0.1);
+}
+
+div.panel {
+  background: rgba(237, 231, 223, 0.8);
+}
+
+div.third {
+  background: rgba(76, 175, 80, 0.6);
+}
+
+.bg-image {
+  /* Full height */
+  /* height: 50%; */
+
+  /* Center and scale the image nicely */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+}
+
+/* .img1 { background-image: url("img/bg.jpg"); } */
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+</style>
+</head>
+<body>
+<div class="bg-image img1">
+<img src="img/icon.png" alt="Srikandi Restaurant" class="responsive" width="600" height="400">
+<p></p>
+
+<button class="accordion">APPETIZER</button>
+<div class="panel">
+  <p>
+    <b>CAESAR SALAD</b> - <i>73</i>
+    <br/>
+    <i>Lettuce with grilled chicken, crouton, parmesan cheese and caesar dressing</i>
+  </p>
+
+  <p>
+    <b>CHEF SALAD</b> - <i>66</i>
+      <br/>
+      <i>Fresh salad garnished with egg, chicken, cheese, rasher beef, served with 1000 island dressing</i>
+  </p>
+
+  <p>
+    <b>SELAT SOLO</b> - <i>58</i>
+    <br/>
+    <i>Typical local freshly salad combination with chicken galantine and sweet sauce</i>
+  </p>
+
+
+</div>
+
+<button class="accordion">SOUP</button>
+<div class="panel">
+  <p>
+    <b>TIMLO SOLO</b> - <i>62</i>
+    <br/>
+    <i>Traditional Soloist clear soup with quill egg, chicken, black mushroom and glass noodle.</i>
+  </p>
+
+  <p>
+    <b>CHICKEN CREAM SOUP</b> - <i>46</i>
+    <br/>
+    <i>Creamy soup served with crouton</i>
+  </p>
+
+  <p>
+    <b>SOTO AYAM</b> - <i>62</i>
+    <br/>
+    <i>Traditional chicken soup with turmeric broth, chicken, vegetables and glass noodle</i>
+  </p>
+
+  <p>
+    <b>SUP BUNTUT</b> - <i>108</i>
+    <br/>
+    <i>Tender oxtail soup with steamed rice and emping crackers</i>
+  </p>
+
+
+</div>
+
+<button class="accordion">CUISINE</button>
+<div class="panel">
+  <p>
+    <b>RENDANG DAGING</b> - <i>98</i>
+    <br>
+    <i>Beef rendang with casava leaf and green sambal, rempeyek served with steamed rice</i>
+  </p>
+    <b>NASI GORENG GLADAG</b> - <i>70</i>
+    <br>
+    <i>Traditional fried rice with eggs, chicken, satay lilit with pickles.</i>
+  <p>
+  </p>
+
+  <p>
+    <b>BAKMI JAWA SAR GEDE</b> - <i>64</i>
+    <br>
+    <i>Stir fried Javanese style noodles with vegetables, eggs and pickles</i>
+  </p>
+
+  <p>
+    <b>CHICKEN SATAY</b> - <i>86</i>
+    <br>
+    <i>Chicken satay, peanut sauce, lontong</i>
+  </p>
+
+  <p>
+    <b>AYAM BAKAR PENYET</b> - <i>80</i>
+    <br>
+    <i>Traditional Javanese marinated chicken in tasty spice served with vegetables urap, sambal and condiment</i>
+  </p>
+
+  <h3>ASIAN</h3>
+
+  <p>
+    <b>YANGZHOU FRIED RICE</b> - <i>70</i>
+    <br>
+    <i>Seafoon fried rice served with fried egg</i>
+  </p>
+
+  <p>
+    <b>KWETIAW FRIED NOODLE</b> - <i>72</i>
+    <br>
+    <i>Stir fried chinese flat noodle with seafood & bean seproute</i>
+  </p>
+
+  <p>
+    <b>SAPO TOFU</b> - <i>60</i>
+    <br>
+    <i>Stir fried vegetables combination with egg tofu</i>
+  </p>
+
+
+
+</div>
+
+<button class="accordion">WESTERN</button>
+<div class="panel">
+
+  <p>
+    <b>JOHN DORY LEMON BUTTER SAUCE</b> - <i>86</i>
+    <br>
+    <i>Tasty dory fillet served with mixed sauteed vegetable, creamy lemon butter sauce and French fries</i>
+  </p>
+
+  <p>
+    <b>MARINATED NORWEGIAN SALMON</b> - <i>156</i>
+    <br>
+    <i>Pan seared salmon served with mixed sauteed vegetable, orange sauce & mashed potato</i>
+  </p>
+
+  <p>
+    <b>MELTIQUE BEEF TENDERLOIN</b> - <i>229</i>
+    <br>
+    <i>Basted Meltique beef tenderloin with mixed sauteed vegetable, black pepper sauce & mashed potato</i>
+  </p>
+
+  <p>
+    <b>CHAR GRILL SIRLOIN</b> - <i>198</i>
+    <br>
+    <i>Char grill sirloin with mixed sauteed vegetable, mushroom sauce & mashed potato</i>
+  </p>
+
+
+</div>
+
+<button class="accordion">PASTA & SANDWICH</button>
+<div class="panel">
+
+  <p>
+    <b>TRIPPLE DECKER SANDWICH</b> - <i>80</i>
+    <br>
+    <i>Three layer of bread filled with chicken, egg, cheese and slice of vegetables</i>
+  </p>
+
+  <p>
+    <b>PASTA LOVERS</b> - <i>75</i>
+    <br>
+    <i>Spaghetti, Penne or Fettuccine served with your choice of sauce (Bolognaise, Carbonara, Pesto or aglio olio)</i>
+  </p>
+
+  <p>
+    <b>BEEF CHEESE BURGER</b> - <i>85</i>
+    <br>
+    <i>Tasty beef patty in burger bun with cheese served with french-fries</i>
+  </p>
+
+
+
+</div>
+
+<button class="accordion">KIDS MENU</button>
+<div class="panel">
+  <p>
+    <b>CHICKEN WINGS</b> - <i>55</i>
+  </p>
+
+  <p>
+    <b>VEGETABLE FRIED RICE</b> - <i>45</i>
+  </p>
+
+  <p>
+    <b>MINI SANDWICH</b> - <i>45</i>
+  </p>
+
+  <p>
+    <b>KIDS PLATTER</b> - <i>50</i>
+    <br>
+    <i>French fries, sausage & chicken drum stick</i>
+  </p>
+
+
+
+</div>
+
+<button class="accordion">LIGHT MEALS</button>
+<div class="panel">
+
+  <p>
+    <b>NACHOS CON CARNE</b> - <i>55</i>
+    <br>
+    <i>Nachos au gratin served with mozzarella cheese and beef bacon</i>
+  </p>
+
+  <p>
+    <b>CHICKEN QUESADILLA</b> - <i>57</i>
+    <br>
+    <i>Flour tortilla filled with chicken, melted cheese, bean, paprika served with French fries and guacamole salsa.</i>
+  </p>
+
+  <p>
+    <b>FISH & CHIPS</b> - <i>49</i>
+    <br>
+    <i>Deep fried fish served with tartar sauce and French fries<br>
+      Ikan goreng disajikan dengan sauce tartar dan kentang goring</i>
+  </p>
+
+  <p>
+    <b>VEGETABLE SPRING ROLL</b> - <i>32</i>
+    <br>
+    <i>Mixed vegetable spring roll served with Bangkok sauce</i>
+  </p>
+
+  <p>
+    <b>COMBO FRITTER</b> - <i>39</i>
+    <br>
+    <i>Fried tofu, tempe mendoan, bakwan</i>
+  </p>
+
+  <p>
+    <b>BANANA FRITTER</b> - <i>39</i>
+    <br>
+    <i>Banana fritter served with grated cheddar cheese and ice cream</i>
+  </p>
+
+  <p>
+    <b>FRENCH FRIES</b> - <i>25</i>
+  </p>
+
+
+
+</div>
+
+<button class="accordion">ROYAL DESERT</button>
+<div class="panel">
+
+  <p>
+    <b>FRESH FRUITS PLETTER</b> - <i>35</i>
+    <br>
+    <i>Watermelo, Honeydew, Papaya</i>
+  </p>
+
+  <p>
+    <b>ICE CREAM</b> - <i>35</i>
+    <br>
+    <i>3 scoops of ice cream with cream</i>
+  </p>
+
+  <p>
+    <b>BANANA SPLIT</b> - <i>40</i>
+    <br>
+    <i>Local banana accompanied with ice cream and cream</i>
+  </p>
+
+  <p>
+    <b>PISANG PANGGANG KEJU</b> - <i>35</i>
+    <br>
+    <i>Pan fried of sweet local banana served with grated cheddar cheese and ice cream</i>
+  </p>
+
+  <p>
+    <b>CAKE OF THE DAY</b> - <i>42</i>
+  </p>
+
+
+
+</div>
+
+
+<button class="accordion">ADDITIONAL SIDE DISH</button>
+<div class="panel">
+
+  <p>
+    <b>ANY KIND OF POTATO</b> - <i>25</i>
+  </p>
+
+  <p>
+    <b>STEAMED RICE</b> - <i>20</i>
+  </p>
+
+  <p>
+    <b>KIND OF EGG</b> - <i>20</i>
+  </p>
+
+</div>
+
+<button class="accordion">BEVERAGE</button>
+<div class="panel">
+  <h3>MINERAL WATER</h3>
+
+  <p>
+    <b>EQUIL NATURAL</b> - <i>40</i>
+  </p>
+
+  <p>
+    <b>EQUIL SPARKLING</b> - <i>50</i>
+  </p>
+
+  <p>
+    <b>SOFT DRINK</b> - <i>30</i>
+    <br>
+    <i>Sprite
+      <br>Coke
+      <br>Coke Zero
+      <br>Soda Water
+      <br>Tonic Water
+    </i>
+  </p>
+
+  <p>
+    <b>PREMIUM TEA</b> - <i>30</i>
+    <br>
+    <i>English Breakfast
+      <br>Earl Grey
+      <br>Peppermint
+      <br>Jasmine Tea
+      <br>Chamomille
+      <br>Green Tea
+      <br>Peach Tea
+    </i>
+    <br>
+    <br>
+    <b>TEA</b> - <i>33</i>
+    <br>
+    <i>Poci Tea
+      <br>Lemon Tea
+      <br>Honey Lemon Tea
+      <br>Lychee Tea
+    </i>
+  </p>
+
+  <p>
+    <b>COFFEE & CHOCOLATTE FLAVOUR</b> - <i>45</i>
+    <br>
+    <i>Hazelnut Latte
+      <br>Mocha Latte
+      <br>Espresso Con Panna
+      <br>Affogato Coffee (espresso, vanilla ice cream)
+      <br>Affogato Coffee (espresso, vanilla syrup, chocolate milk)
+      <br>Mustika Latte (Espresso, Pineapple, Coconut Cream, Chocolate))</i>
+  </p>
+
+  <p>
+    <b>JUICE</b> - <i>35</i>
+    <br>
+    <i>Orange Juice
+      <br>Honeydew
+      <br>Strawberry
+      <br>Watermelon
+      <br>Avocado
+      <br>Apple
+      <br>Kiwi
+      <br>Dragon Fruit
+    </i>
+    </p>
+
+  <p>
+    <b>MIXEd JUICE (2 Choices)</b> - <i>45</i>
+    <br>
+    <!-- <i>(Orange Juice, Honeydew, Strawberry, Watermelon, Avocado)</i> -->
+  </p>
+
+  <h3>COFFEE & CHOCOLATE</h3>
+
+  <p>
+    <b>CHOCOLATE</b>  <i>35</i>
+  </p>
+
+  <p>
+    <b>ESPRESSO</b>  <i>40</i>
+  </p>
+
+  <p>
+    <b>AMERICANO</b>  <i>40</i>
+  </p>
+
+  <p>
+    <b>LONG BLACK COFFEE</b>  <i>40</i>
+  </p>
+
+  <p>
+    <b>CAPPUCCINO	</b>  <i>40</i>
+  </p>
+
+  <p>
+    <b>COFFEE LATTE</b>  <i>40</i>
+  </p>
+
+
+  <h3>MOCKTAIL</h3>
+
+  <p>
+    <b>VIRGIN MOJITO</b> - <i>55</i>
+    <br>
+    <i>Minty Syrup, Mint Leave, Lime, Soda Water</i>
+  </p>
+
+  <p>
+    <b>SHIRLY GINGER</b> - <i>55</i>
+    <br>
+    <i>Ginger, Lime, Grenadine Syrup & Soda Water</i>
+  </p>
+
+  <p>
+    <b>ROYAL BOOSTER</b> - <i>55</i>
+    <br>
+    <i>Celery, Lime, Pineapple Jusice</i>
+  </p>
+
+  <p>
+    <b>LIME SQUASH</b> - <i>55</i>
+    <br>
+    <i>Lime, Soda Water</i>
+  </p>
+
+  <p>
+    <b>BALUWARTI</b> - <i>55</i>
+    <br>
+    <i>Lychee, Strawberry, Apple, Soda Water</i>
+  </p>
+
+  <p>
+    <b>SEXY COLADA</b> - <i>55</i>
+    <br>
+    <i>Coconut Milk, Pineapple ,Soda Water</i>
+  </p>
+
+  <p>
+    <b>GLADAK OCEAN</b> - <i>55</i>
+    <br>
+    <i>Blue Coracao, Fresh Strawberry, Strawberry SyrupP, Grass Jelly, Sweet Basil, Soda Water</i>
+  </p>
+
+
+ 	<h3>TRADITIONAL</h3>
+
+  <p>
+    <b>WEDANG UWUH</b> - <i>40</i>
+  </p>
+
+  <p>
+    <b>WEDANG JAHE</b> - <i>40</i>
+  </p>
+
+  <p>
+    <b>TIRTAMAYA</b> - <i>45</i>
+    <br>
+    <i>Ginger, Temulawak, Lime, Brown Sugar</i>
+  </p>
+
+  <p>
+    <b>BENGAWAN</b> - <i>45</i>
+    <br>
+    <i>Temulawak, Lychee Syrup, Orange Juice</i>
+  </p>
+
+  <p>
+    <b>WEDANG WARAS WIRIS</b> - <i>45</i>
+    <br>
+    <i>Ginger, Lemongrass, Lime, Herbs</i>
+  </p>
+
+
+  <h3>SMOOTHIES</h3>
+
+  <p>
+    <b>BANANA SMOTHIES</b> - <i>45</i>
+  </p>
+
+  <p>
+    <b>STRAWBERRY SMOTHIES</b> - <i>45</i>
+  </p>
+
+  <p>
+    <b>AVOCADO SMOTHIES</b> - <i>45</i>
+  </p>
+
+  <p>
+    <b>STRAWBERRY SMOTHIES</b> - <i>45</i>
+  </p>
+
+  <h3>BEER</h3>
+
+  <p>
+    <b>BINTANG</b> - <i>60</i>
+  </p>
+
+  <p>
+    <b>BALIHAI</b> - <i>60</i>
+  </p>
+
+  <p>
+    <b>HEINEKEN</b> - <i>70</i>
+  </p>
+
+  <h3>WINE</h3>
+
+  <p>
+    <b>WHITE</b><br>
+    <b>Plaga Chardonnay</b> - <i>460</i>
+  </p>
+
+  <p>
+    <b>RED</b><br>
+    <b>Plaga Cabernet Merlot</b> - <i>460</i><br>
+    <b>Plaga Cabernet Sauvignon</b> - <i>460</i>
+  </p>
+
+
+  <h3>MILKSHAKE</h3>
+
+  <p>
+    <b>CHOCOLATE MILKSHAKE</b> - <i>45</i>
+  </p>
+
+  <p>
+    <b>STRAWBERRY MILKSHAKE</b> - <i>45</i>
+  </p>
+
+  <p>
+    <b>VANILLA MILKSHAKE</b> - <i>45</i>
+  </p>
+
+  <p>
+    <b>MOCHA MILKSHAKE</b> - <i>45</i>
+  </p>
+
+</div>
+<div class="">
+  <br><br><br><br>
+</div>
+</div>
+<div class="footer">
+  <p>To Order Please Call Ext. 1501 / 5</p>
+  <p style="font-size:12px">All prices are in the thousand rupiah and inclusive of 21% government tax and service</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
